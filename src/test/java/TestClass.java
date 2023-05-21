@@ -1,13 +1,9 @@
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-public class TestClass {
+public class TestClass extends BaseTestClass {
 
-    @BeforeMethod
-    public void beforeMethod (){
-        System.out.println("Inside before method") ;
 
-    }
 
 
 
@@ -34,25 +30,9 @@ public class TestClass {
 
 
 
-    @AfterMethod
-    public void afterMethod (){
-        System.out.println("After method") ;
-        System.out.println("");
-    }
 
 
 
-    @BeforeClass
-    public void before() {
-        System.out.println("Before class");
-        System.out.println();
-    }
-
-
-    @AfterClass
-    public void afterclass(){
-        System.out.println("After class");
-    }
 
 
 
